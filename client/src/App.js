@@ -4,20 +4,37 @@ import axios from 'axios';
 
 class App extends React.Component {
 
+  constructor() {
+    super();
+
+    this.state = {
+
+      player: []
+    }
+
+  }
+
 
   componentDidMount() {
     axios
-    .get('http://localhost:5000/api/players')
+      .get('http://localhost:5000/api/players')
 
-    .then(response => console.log (response))
+      // .then(response => console.log (response))
+
+      .then(response => {
+        this.setState({
+          player: response.data
+        });
+      })
+      .catch(error => console.log('error'))
   }
 
-  render(){
-  return (
-    <div className="App">
-     <h1>Soccer</h1>
-    </div>
-  );
-}
+  render() {
+    return (
+      <div className="App">
+        <h1>Soccer</h1>
+      </div>
+    );
+  }
 }
 export default App;
