@@ -35,13 +35,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
+        <Navbar />
         <h1 className="app-header">Players</h1>
         <section className="player-cards">
-        {this.state.player.map(person => (
-          <PlayerCards key={person.id} player={person} />
-        ))}
-</section>
+          {this.state.player.map(person => (
+            <PlayerCards key={person.id} player={person} />
+          ))}
+        </section>
       </div>
     );
   }
