@@ -31,3 +31,8 @@ test ('2019 text found in Navbar.js', () =>{
   getByText (/2019/i)
 })
 
+test ('stats text found in Navbar.js', () =>{
+  const {findByText} = render (<Navbar/>);
+findByText (/stats/i)
+})
+
