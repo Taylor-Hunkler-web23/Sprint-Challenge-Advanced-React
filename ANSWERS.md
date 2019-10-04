@@ -4,11 +4,11 @@ Before hooks were invented, class components were used because they had extra fe
 
 - [ ] Name three lifecycle methods and their purposes.
 
-ComponentDidMount is invoked immediatley after a component is mounted. This is a good place to add event listeners or put an API call. 
+ComponentDidMount is invoked immediately after a component is mounted. This is a good place to add event listeners or put an API call. 
 
 ShouldComponentUpdate is used to stop a component from updating.
 
-ComponentWillUnmount is invoked before a component unmounts. It is best used for cleanup like canceling network requests.
+ComponentWillUnmount is invoked before a component unmounts. It is best used for cleanup like cancelling network requests.
 
 
 - [ ] What is the purpose of a custom hook?
