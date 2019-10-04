@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   return (
     <nav className="navbar">
-      <h1>Soccer Stats 2019</h1>
+      <h1 className="nav-header">⚽ Soccer Stats 2019</h1>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
