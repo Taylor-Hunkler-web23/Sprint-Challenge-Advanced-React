@@ -14,8 +14,20 @@ test ('Players header found in App.js', () =>{
 })
 
 
+test ('Navbar renders without crashing', () => {
+  render (<Navbar/>)
+})
+
+
 
 test ('Soccer header found in Navbar.js', () =>{
   const {getByText} = render (<Navbar/>);
   getByText (/Soccer/i)
 })
+
+
+test ('2019 text found in Navbar.js', () =>{
+  const {getByText} = render (<Navbar/>);
+  getByText (/2019/i)
+})
+
