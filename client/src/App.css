@@ -81,3 +81,14 @@
     background-color: #1F2022;
     border: none;
   }
+
+.player-parent-div{
+  display:flex;
+}
+
+.player-cards {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 3rem;
+	justify-content: space-around;
+}

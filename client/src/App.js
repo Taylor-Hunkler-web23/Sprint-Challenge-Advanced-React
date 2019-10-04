@@ -37,10 +37,11 @@ class App extends React.Component {
       <div className="App">
         <Navbar/>
         <h1>Players</h1>
+        <section className="player-cards">
         {this.state.player.map(person => (
           <PlayerCards key={person.id} player={person} />
         ))}
-
+</section>
       </div>
     );
   }
