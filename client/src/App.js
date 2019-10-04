@@ -35,6 +35,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1>Soccer</h1>
+        {this.state.player.map(person => (
+          <PlayerCards key={person.id} player={person} />
+        ))}
+
       </div>
     );
   }
